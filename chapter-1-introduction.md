@@ -9,11 +9,11 @@ Focus of this chapter is on the:
 Applications such as twitter, facebook etc. are data intensive applications. In these apps the main bottleneck is "data handling" not CPU or memory. 
 
 Apps do data handling in following ways:
- - **database:** storing data. So, that they or another application can use it
- - **caches:** remember the results of the expensive operation, to speed up reads.
- - **search indexs:**  Allow users to search data by keyword or filter it in various ways
- - **stream processing:** Send a message to another process, to be handled sync
- - **batch processing:** Periodically cruch a large amount of acculamted data
+ - **database:** Storing data. So, that they or another application can use it.
+ - **caches:** Remember the results of the expensive operation, to speed up reads.
+ - **search indexs:**  Allow users to search data by keyword or filter it in various ways.
+ - **stream processing:** Send a message to another process, to be handled sync.
+ - **batch processing:** Periodically crunch a large amount of acculamted data
 
 ### What are the factors to consider while creating data intensive applications?
 

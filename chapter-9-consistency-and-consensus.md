@@ -35,9 +35,10 @@ Our goal is to find the abstraction. This will allow an appliction to ignore som
 
 **Consensus Algorithms:**
 
-1. Raft
-
-2. Paxos
+1. Paxos – Classic, but complex to implement
+2. Raft – Easier to understand and widely adopted
+3. Zab – Used in Apache Zookeeper
+4. PBFT – Byzantine Fault Tolerant (handles malicious nodes)
 
 **The Challenge of Consensus**
 
@@ -66,6 +67,8 @@ also known as: atomice consistency, strong consistency, immediate consistenctm o
 **Cost of linearizable?**
 
 ## CAP theorm
+
+## Total broadcast Order
 
 
 ## Important 
