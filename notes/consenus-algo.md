@@ -22,3 +22,10 @@ Popular Consensus Algorithms:
 2. Raft – Easier to understand and widely adopted
 3. Zab – Used in Apache Zookeeper
 4. PBFT – Byzantine Fault Tolerant (handles malicious nodes)
+
+
+With Consenus, Total broadcast Order is related.  If you solve one, other will be solved.
+
+For replicates state machines (DBs), TOB assures every node applies the same updates at the same order - keeping them consistent. 
+
+TOB, assures all nodes deliver the same messages and in the same order. Consequences algorithims (paxos, and raft) can implement TOB. 
