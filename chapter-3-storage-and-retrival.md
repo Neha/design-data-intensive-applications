@@ -1,4 +1,4 @@
-## Storage and Retrival 
+## Chapter 3: Storage and Retrival 
 
 Focus:
 
