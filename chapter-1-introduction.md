@@ -4,9 +4,12 @@ Focus of this chapter is on the:
 
 - Fundamentals of the data systems.
 - what factors to consider while creating data intensive application.
+- good design system is all about trade-offs
+
+>> This book is focused on the fundamentals and not the programing, coding, or tutorials. 
 
 ### What are data intensive applications?
-Applications such as twitter, facebook etc. are data intensive applications. In these apps the main bottleneck is "data handling" not CPU or memory. 
+Applications such as twitter, facebook etc. are also data intensive applications. It is NOT that "data intensive apps" are having "big data". In such apps the main bottleneck is "data handling" not CPU or memory. 
 
 Apps do data handling in following ways:
  - **database:** Storing data. So, that they or another application can use it.
@@ -17,7 +20,13 @@ Apps do data handling in following ways:
 
 ### What are the factors to consider while creating data intensive applications?
 
-1. **Reliability:** Keep the lights ON even when there is a fault
+1. Reliability : Keep the lights ON even when there is a fault
+2. Scalable : Holds the load gracefully (more users, more load)
+3. Maintainbility : The system should be easy to work on, adapt, and extend over time
+
+-- 
+
+1. **Reliability:** 
 
 - An application should be highly reliable
 - If there is any fault, it should be able to either  heal itself or still keep working
