@@ -18,7 +18,7 @@ Picking model (structure) of the data helps in : how easy it is to query , how q
 
 eg: In book, we have bill gates resume and now the task is to store into DB. Now, as an dev which data model you will pick? 
 
-**1. Relational (tables and rows) eg: NoSQL**
+**1. Relational (tables and rows) eg: MySQL**
 
 - table and rows 
 - use keys 
