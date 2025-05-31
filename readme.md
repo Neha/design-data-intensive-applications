@@ -4,11 +4,11 @@ This repo is my notes I made while/after reading the book. I made a [video](http
 
 ## Chapters
 
-| Chapter| Link | Status |
-|----------|----------|----------|
-| Chapter 1    | [Link](chapter-1-introduction.md)   | Done   |
-| Chapter 2   | [Link](chapter-2-data-models-and-query-languages.md)  | Done  |
-| Chapter 3   | [Link](chapter-3-storage-and-retrival.md)   | WIP   |
-| Chapter 4   | [Link](chapter-4-encoding-and-evolution.md)   | WIP   |
-| Chapter 5   | [Link](chapter-5-replication.md)   | WIP   |
-| Chapter 9   | [Link](chapter-9-consistency-and-consensus.md)   | WIP   |
+| Chapter| Link | Video |  Status |
+|----------|----------|----------| ----------|
+| Chapter 1    | [Link](chapter-1-introduction.md)   | [Video](https://youtu.be/sM4wF-SLgfM) | Done   |
+| Chapter 2   | [Link](chapter-2-data-models-and-query-languages.md)  | - |  Done  |
+| Chapter 3   | [Link](chapter-3-storage-and-retrival.md)   | - |  WIP   |
+| Chapter 4   | [Link](chapter-4-encoding-and-evolution.md)   | - |  WIP   |
+| Chapter 5   | [Link](chapter-5-replication.md)   | - |  WIP   |
+| Chapter 9   | [Link](chapter-9-consistency-and-consensus.md)   | - | WIP   |
