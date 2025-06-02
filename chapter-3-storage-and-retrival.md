@@ -6,6 +6,13 @@ Focus:
 
 2. Different storage engines and use-cases
 
+## OLTP vs OLAP
+
+OLTP: Online Transaction Processing
+
+OLAP: Online Analytics Processing
+
+
 As a developer you might not be developing a database from scratch but it is important to know 
 what each storage engine we have, use-cases, and trade-offs to take tech decisions.
 
@@ -16,24 +23,48 @@ This will be append only log based file. The data will keep appending leads to d
 
 However, the problem comes when we try to access a value db_get(k1); When there will be multiple entries it will lead to o(n).
 
-
 ## Index and DB
+
+To solve the above issue, we can use INDEX (another data strcuture). It is kind of metadata stored in a seprate  file.
+This is made from the original data. 
+
+However, writes are expensive as everytime we are writing to the storage we need to update the index. 
+
+Hence, database doesn't provide the index by default.
+
+Leave it on the developers to decide index based on the access pattern.
 
 ## type of storage engines
 
 1. Log based:
 
-- SSTable
+- append only
 
-- LSM trees
+- new writes goes at the end
+
+- writes are fast, reads are slow 
+
+- good for recovery (resilant)
+
+- LevelDB, Cassandra uses
+
+- memtable, LSM , SSTable
+
+![log based](/images/log-based.png)
 
 2. Page based:
 
-- B trees
+- Data is split into fixed-size blocks or pages (like 4KB).
 
-## OLTP vs OLAP
+- Updates happen "in-place"
 
-OLTP: Online Transaction Processing
+- databases use **B-trees** to index them.
 
-OLAP: Online Analytics Processing
+- Good for random reads
+
+- In-place updates can be complex under high write load
+
+- MySQL (InnoDB), Postgres eg: 
+
+
 
